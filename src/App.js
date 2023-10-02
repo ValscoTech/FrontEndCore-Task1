@@ -12,15 +12,15 @@ import Login from "./Screens/Login/Login";
 export default function App() {
   return (
     <Router>
-      <div className="main-container">
+      <div className=" md:w-screen  w-[450px]">
         <Navbar1 />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/products" element={<Productspage/> } />
+          <Route path="/login" element={<Login/> } />
           {/* Add a catch-all route */}
           {/* <Route path="*" element={<NotFound />} /> */}
-          <Route path="/login" element={<Login/> } />
         </Routes>
       </div>
     </Router>
